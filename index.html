@@ -8,25 +8,216 @@
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/82dd5191af.js" crossorigin="anonymous"></script>
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @media only screen and (min-width:376px) {
+      body {
+      background-image:  url("images/bg-desktop.svg"), linear-gradient(hsl(257, 40%, 49%),  hsl(300, 69%, 71%));
+    }
+    }
+    
+
+    header {
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+      padding-right: 30px;
+
+    }
+
+    h1 {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 55px;
+    }
+
+    p {
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    section {
+      width: auto;
+      height: 570px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .illustration-column {
+      float: left;
+      width: 700px;
+      padding: 5px;
+    }
+
+    .text-column {
+      float: left;
+      width: 460px;
+      padding-top: 15px;
+      padding-left: 70px;
+    }
+
+    button {
+      background-color: white;
+      border: none;
+      border-radius: 25px;
+      color: hsl(257, 40%, 49%);
+      padding: 15px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 15px 4px 2px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: hsl(300, 69%, 71%);
+      color: white;
+    }
+
+    .socialmedia-links {
+      margin-left: 290px;
+    }
+    .fab {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: large;
+    }
+
+    #facebook { 
+      border-image: initial;
+      border: white;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 50% 50% 50% 50%;
+      padding: 6% 8.5% 6% 8.5%;
+      margin-top: 50px;
+      color: white;
+    }
+
+    #facebook:hover {
+      border-color: hsl(327, 84%, 48%);
+      color:  hsl(327, 84%, 48%);
+    }
+
+    #twitter { 
+      border-image: initial;
+      border: white;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 50% 50% 50% 50%;
+      padding: 6% 6.5% 6% 6.5%;
+      margin-top: 200px;
+      color: white;
+    }
+
+    #twitter:hover {
+      border-color: hsl(327, 84%, 48%);
+      color:  hsl(327, 84%, 48%);
+    }
+
+    #instagram { 
+      border-image: initial;
+      border: white;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 50% 50% 50% 50%;
+      padding: 6% 7% 6% 7%;
+      margin-top: 200px;
+      color: white;
+    }
+
+    #instagram:hover {
+      border-color: hsl(327, 84%, 48%);
+      color:  hsl(327, 84%, 48%);
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+    }
+
+    .attribution a {
+       color: hsl(228, 45%, 44%); 
+    }
+
+    @media only screen and (max-width:375px) {
+      body {
+        background-image:  url("images/bg-mobile.svg"), linear-gradient(hsl(257, 40%, 49%),  hsl(300, 69%, 71%));
+        background-repeat: no-repeat, no-repeat;
+        width: 375px;
+        height: 812px;
+      }
+
+      section {
+        width: 680px;
+        height: 570px;
+      }
+
+      .illustration-column {
+        width: 680px;
+        height: 570px;
+      }
+
+      .illustration {
+        width: 650px;
+        height: 500px;
+      }
+
+      .text-column {
+        width: 680px;
+        height: 560px;
+        padding-right: 70px;
+        text-align: center;
+      }
+
+      button {
+        padding: 15px 200px;
+      }
+
+      .socialmedia-links {
+        margin: 10px;
+      }
+    }
   </style>
 </head>
 <body>
+  <header>
+    <img class="logo" src="images/logo.svg" alt="logo">
+  </header>
+  <section>
+  <div class="illustration-column">
+    <img class="illustration" src="images/illustration-mockups.svg" alt="illustration-mockups">
+  </div>
+  <div class="text-column">
+  <h1>Build The Community Your Fans Will Love</h1>
 
-  Build The Community Your Fans Will Love
+  <p>Huddle re-imagines the way  we build communities. You have a voice, but so does your audience. 
+  Create connections with your users as you engage in genuine discussion.</p>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
+  <button>Register</button> 
+  <div class="socialmedia-links"> 
+    <i class="fab fa-facebook-f" id="facebook"></i>
+    <i class="fab fa-twitter" id="twitter"></i>
+    <i class="fab fa-instagram" id="instagram"></i>
+  </div>
+  </div>
+  </section>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://twitter.com/art_art87">Art Carida</a>.
     </p>
   </footer>
 </body>
